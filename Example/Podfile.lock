@@ -1,0 +1,16 @@
+PODS:
+  - JKExtension (0.1.0)
+
+DEPENDENCIES:
+  - JKExtension (from `../`)
+
+EXTERNAL SOURCES:
+  JKExtension:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JKExtension: 42241532b27866e9ca29589854a916612333e00c
+
+PODFILE CHECKSUM: 119ed5a90bce43e62fd43a4e339d7e75162345a6
+
+COCOAPODS: 1.8.4

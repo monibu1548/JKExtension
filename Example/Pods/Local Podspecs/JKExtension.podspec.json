@@ -1,7 +1,7 @@
 {
   "name": "JKExtension",
   "version": "0.1.0",
-  "summary": "A short description of JKExtension.",
+  "summary": "JK Extension",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/monibu1548/JKExtension",
   "license": {
@@ -16,7 +16,7 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "13.0"
   },
   "source_files": "JKExtension/Classes/**/*"
 }

@@ -1,0 +1,22 @@
+{
+  "name": "JKExtension",
+  "version": "0.1.0",
+  "summary": "A short description of JKExtension.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/monibu1548/JKExtension",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "monibu1548": "monibu1548@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/monibu1548/JKExtension.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "JKExtension/Classes/**/*"
+}

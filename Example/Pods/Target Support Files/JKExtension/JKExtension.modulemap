@@ -1,0 +1,6 @@
+framework module JKExtension {
+  umbrella header "JKExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}

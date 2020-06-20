@@ -31,4 +31,14 @@ extension Date {
         dateFormatter.dateFormat = format.rawValue
         return dateFormatter.string(from: self)
     }
+
+    public func toTimestamp() -> Int {
+        return Int(self.timeIntervalSince1970 * 1000)
+    }
+}
+
+extension Int {
+    public func toDate() -> Date {
+        return Date(timeIntervalSince1970: TimeInterval(self / 1000))
+    }
 }

@@ -11,31 +11,31 @@ import RxCocoa
 import RxOptional
 
 extension ObservableType {
-    func filterMap<Value>(_ transform: @escaping (Element) -> Value?) -> Observable<Value> {
+    public func filterMap<Value>(_ transform: @escaping (Element) -> Value?) -> Observable<Value> {
         return map(transform).filterNil()
     }
 
-    func mapVoid() -> Observable<Void> {
+    public func mapVoid() -> Observable<Void> {
         return .just(Void())
     }
 }
 
-public extension SharedSequenceConvertibleType {
-    func filterMap<Value>(_ transform: @escaping (Element) -> Value?) -> SharedSequence<SharingStrategy, Value> {
+extension SharedSequenceConvertibleType {
+    public func filterMap<Value>(_ transform: @escaping (Element) -> Value?) -> SharedSequence<SharingStrategy, Value> {
         return map(transform).filterNil()
     }
 
-    func mapVoid() -> SharedSequence<SharingStrategy, Void> {
+    public func mapVoid() -> SharedSequence<SharingStrategy, Void> {
         return .just(Void())
     }
 }
 
-public extension PrimitiveSequenceType {
-    func filterMap<Value>(_ transform: @escaping (Element) -> Value?) -> PrimitiveSequence<SingleTrait, Value> {
+extension PrimitiveSequenceType {
+    public func filterMap<Value>(_ transform: @escaping (Element) -> Value?) -> PrimitiveSequence<SingleTrait, Value> {
         return primitiveSequence.asObservable().map(transform).filterNil().asSingle()
     }
 
-    func mapVoid() -> PrimitiveSequence<SingleTrait, Void> {
+    public func mapVoid() -> PrimitiveSequence<SingleTrait, Void> {
         return .just(Void())
     }
 }

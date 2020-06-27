@@ -21,7 +21,7 @@ public enum DateFormat: String {
     /// ex.  2020년 3월 30일
     case yyyy년_M월_d일 = "yyyy년 M월 d일"
 
-    ////  ex. 2020년 4월 13일 17:12
+    //// ex. 2020년 4월 13일 17:12
     case yyyy년_M월_d일__hh_mm = "yyyy년 M월 d일 HH:mm"
 }
 
@@ -29,6 +29,12 @@ extension Date {
     public func toString(format: DateFormat) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format.rawValue
+        return dateFormatter.string(from: self)
+    }
+    
+    public func toString(customFormat: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = customFormat
         return dateFormatter.string(from: self)
     }
 

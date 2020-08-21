@@ -29,12 +29,16 @@ extension Date {
     public func toString(format: DateFormat) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format.rawValue
+        dateFormatter.calendar = Calendar(identifier: .iso8601)
+        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         return dateFormatter.string(from: self)
     }
     
     public func toString(customFormat: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = customFormat
+        dateFormatter.calendar = Calendar(identifier: .iso8601)
+        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         return dateFormatter.string(from: self)
     }
 

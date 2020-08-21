@@ -40,6 +40,6 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'RxSwift', '~> 5.0.1'
-  s.dependency 'RxCocoa'
+  s.dependency 'RxCocoa', '~> 5.1.1'
   s.dependency 'RxOptional', '~> 4.1.0'
 end

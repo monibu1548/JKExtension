@@ -30,7 +30,6 @@ extension Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format.rawValue
         dateFormatter.calendar = Calendar(identifier: .iso8601)
-        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         return dateFormatter.string(from: self)
     }
     
@@ -38,7 +37,6 @@ extension Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = customFormat
         dateFormatter.calendar = Calendar(identifier: .iso8601)
-        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         return dateFormatter.string(from: self)
     }
 

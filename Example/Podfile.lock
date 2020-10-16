@@ -1,8 +1,8 @@
 PODS:
   - JKExtension (0.1.0):
     - RxCocoa
-    - RxOptional (~> 4.1.0)
-    - RxSwift (~> 5.0.1)
+    - RxOptional
+    - RxSwift
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -11,7 +11,7 @@ PODS:
     - RxSwift (~> 5)
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
-  - RxSwift (5.0.1)
+  - RxSwift (5.1.1)
 
 DEPENDENCIES:
   - JKExtension (from `../`)
@@ -28,12 +28,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JKExtension: d7f90ddd79fab80df905fd955dbc21c9c84c9d59
+  JKExtension: 0388b64e2b53258845575b8239f02ccf5d5cbc25
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxOptional: b1fcd60856807a564c0215c2184b8d33e7826dc2
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
-  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
 PODFILE CHECKSUM: 0df4d0a3ee30f8e4a6e8479720431b4967142dbb
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.0.rc.1
